@@ -1,0 +1,13 @@
+
+.card{
+    background-color:rgba(210, 216, 220, 0.874);
+    border-color: rgb(122, 118, 118);
+}
+.card-body{
+    background-color:rgba(232, 217, 225, 0.623);
+    border-color: rgba(19, 2, 2, 0.9);
+}
+.col{
+border-color: rgba(252, 249, 249, 0.932);
+display:flex
+}

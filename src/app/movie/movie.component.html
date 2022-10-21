@@ -1,0 +1,63 @@
+   <div class="booking">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-8 mt-5 mb-5">
+            <div class="col" style="margin-left:100px;">
+              <div class="card card-img-top shadow p-0 mb-15 bg-body rounded">
+                <img src={{movie.image}} class="card-img-top wrapimg" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">{{movie.moviename}}</h5>
+                
+                </div>
+                </div>
+                
+            </div>
+            <div class="styleform" style="margin-left:150px;">
+              <form #myForm="ngForm"  (ngSubmit)="addmvedetails(myForm,movie.id)">
+                <!-- <div *ngIf="show  " class=" alert alert-success" role="alert">
+                 <a href="#" class="alert-link">ticket booked successfully</a>
+                 </div> -->
+                
+                 <div *ngIf="status"  class="alert alert-danger" role="alert">
+               <a href="#" class="alert-link">sryy show has full</a>
+                </div>
+             
+                
+                
+                    <label for="username" class="form-label">Enter your Name</label>
+                    <input type="text" class="form-control" id="username" 
+                  
+                        name="username" ngModel required #username="ngModel"/>
+                        <div id="userhelp1" class="form-text" *ngIf="username.touched && !username.valid">please enter your name</div>
+                      
+        
+                        <br>
+        
+  <label for="movie-name" class="form-label">Ente movie Name</label>
+  <input type="text" class="form-control" id="moviename" 
+      name="moviename" ngModel required #mobviename="ngModel"/>
+  <br>
+  <label for="showtime" class="form-label">Ente show time</label>
+  <input type="text" class="form-control" id="showtime" 
+      name="showtime" ngModel required #showtime="ngModel"/>
+      <div id="userhelp1" class="form-text" *ngIf="showtime.touched && !showtime.valid">please enter your show timings</div>
+  <label for="nooftickets" class="form-label">Enter no.of tickets</label>
+  <input type="number" class="form-control" id="nooftickets" 
+      name="nooftickets" ngModel required #nooftickets="ngModel"/>
+      <div id="userhelp1" class="form-text" *ngIf="nooftickets.touched && !nooftickets.valid">please enter tickets to be booked</div>
+    
+  <br>
+   
+    
+    <h5 ><small> Available tickets={{movie.availtickets}} </small></h5> 
+    <br>
+  
+      
+  <button type="submit" >submit</button> 
+  
+  
+  
+  </form>
+            </div> 
+            </div>
+            </div>
+
+

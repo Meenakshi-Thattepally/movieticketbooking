@@ -1,0 +1,19 @@
+/* div{
+    width:100%;
+    background-color:rgba(160, 99, 18, 0.345);
+    height: 240px;
+}
+mat-form-field{
+    width: '50px';
+    display: flex;
+    flex-direction: row;
+  
+    font-size: 30px;
+    padding:2px;
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+} */
+mat-form-field{
+    width:100%
+}

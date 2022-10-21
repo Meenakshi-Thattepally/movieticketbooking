@@ -1,0 +1,36 @@
+/* .mat-dialog-container{
+    display:block;
+    padding:24px;
+    border-radius:4px;
+    width:30%
+}
+.namm{
+  padding-left: 20% ;
+  border: 30px;
+  
+ 
+
+}
+.sss{
+    border: 30px;
+    border-color: blue; 
+} 
+table{
+  background-color: rgb(212, 35, 55); ;
+} */
+table {
+  width: 100%;
+}
+
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+td, th {
+  width: 25%;
+}
+.container{
+  max-width:1200px;
+  margin:0 auto;
+}
